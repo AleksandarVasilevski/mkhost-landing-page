@@ -1,50 +1,53 @@
-validate();
+
 
 // Smooth scrolling to all links
-$(document).ready(function(){
+$(document).ready(function() {
   $("a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 800, function() {
         window.location.hash = hash;
       });
     }
   });
+
+  document.getElementById("inputSent").addEventListener("click", function() {
+    validate();
+  });
 });
 
 //Form validation
-function validate(){
-  document.getElementById("inputSent").addEventListener("click", function(event){
-    var name = document.forms["contact"]["name"].value;
-    var email = document.forms["contact"]["email"].value;
-    var message = document.forms["contact"]["message"].value;
+function validate() {
+var name = document.forms["contact"]["name"].value;
+  var email = document.forms["contact"]["email"].value;
+  var message = document.forms["contact"]["message"].value;
 
-    const parentAlert = document.querySelector("#alert-contact");
-    const alert = document.createElement("div");
-    parentAlert.appendChild(alert);
-    if(name == "" || name == null){
-      alert.className = "alert alert-warning";
-      alert.textContent = "Треба да внесете име";
-    }else if(email == "" || email == null){
-      alert.className = "alert alert-warning";
-      alert.textContent = "Треба да внесете е-адреса";
-    }else if(message == "" || message == null){
-      alert.className = "alert alert-warning";
-      alert.textContent = "Треба да внесете порака";
-    }else{
-      //Send message
-      var formArray = [name, email, message];
-      sendForm(formArray);
-    }
-    removeAlert(alert);
-  });
-}
+  const parentAlert = document.querySelector("#alert-contact");
+  const alert = document.createElement("div");
+  parentAlert.appendChild(alert);
+  if (name == "" || name == null){
+    alert.className = "alert alert-warning";
+    alert.textContent = "Треба да внесете име";
+  } else if (email == "" || email == null){
+    alert.className = "alert alert-warning";
+    alert.textContent = "Треба да внесете е-адреса";
+  } else if (message == "" || message == null){
+    alert.className = "alert alert-warning";
+    alert.textContent = "Треба да внесете порака";
+  } else {
+    //Send message
+    var formArray = [name, email, message];
+    sendForm(formArray);
+  }
+  removeAlert(alert);
+};
+
 
 //Sent form to node js
-function sendForm(formArray){
+function sendForm(formArray) {
   $.ajax({
     type: "POST",
     url: "/contact",
@@ -70,7 +73,7 @@ function sendForm(formArray){
 }
 
 //Remove form alert
-function removeAlert(alert){
+function removeAlert(alert) {
   const parentAlert = document.querySelector("#alert-contact");
   //remove alert after 3sec
   setTimeout(function(){
