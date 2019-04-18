@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MKhost</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#heading"><img src="/images/MKhost-logo-original-small.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link text-uppercase font-weight-bold" href="#heading">Дома</a>
+                        <a class="nav-item nav-link text-uppercase font-weight-bold" href="#services">Услуги</a>
+                        <a class="nav-item nav-link text-uppercase font-weight-bold" href="#contact">Контакт</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="heading">
+        <div class="container-fluid">
+            <div class="background-holder">
+                <a id="show-services" href="#services"><img src="/images/strelki.png" height="50"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="container-fluid">
+            <h1 class="services-title text-center mb-5">Хостинг Пакети</h1>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title font-weight-bold">Basic</h3>
+                            <!-- Lista??-->
+                            <ul>
+                                <li><p class="card-text">Одличен за почетен веб сајт.</p></li>
+                                <li><p class="lead text-uppercase">1 Gb Простор</p></li>
+                                <li><p class="lead text-uppercase">40 Gb Трансфер</p></li>
+                                <li><i class="fas fa-home fa-3x"></i></li>
+                                <li><p class="lead text"><b class="font-weight-bold">2439 ден</b>/год.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title font-weight-bold">Regular</h3>
+                            <!-- Lista??-->
+                            <ul>
+                                <li><p class="card-text">Одличен за мал веб сајт.</p></li>
+                                <li><p class="lead text-uppercase">5 Gb Простор</p></li>
+                                <li><p class="lead text-uppercase">300 Gb Трансфер</p></li>
+                                <li><i class="fas fa-home fa-3x"></i></li>
+                                <li><p class="lead text"><b class="font-weight-bold">3999 ден</b>/год.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title font-weight-bold">Power</h3>
+                            <!-- Lista??-->
+                            <ul>
+                                <li><p class="card-text">Погоден за големи сајтови.</p></li>
+                                <li><p class="lead text-uppercase">25 Gb Простор</p></li>
+                                <li><p class="lead text-uppercase">500 Gb Трансфер</p></li>
+                                <li><i class="fas fa-rocket fa-3x"></i></li>
+                                <li><p class="lead text"><b class="font-weight-bold">5999 ден</b>/год.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="alert-contact">
+                    <!--alert message-->
+                    </div>
+                    <h1 class="contact-title text-center mb-5">Контакт</h1>
+                    <form name="contact">
+                    <div class="form-group row">
+                        <div class="col-lg-6 offset-lg-3 col-md-12">
+                            <input type="text" class="form-control form-control-lg" id="inputName" placeholder="Име" name="name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-lg-6 offset-lg-3 col-md-12">
+                            <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Е-Пошта" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-lg-6 offset-lg-3 col-md-12">
+                            <textarea name="message" class="form-control form-control-lg" id="inputMessage" cols="32" rows="8" placeholder="Порака"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-lg-6 offset-lg-3 col-md-12">
+                        <a id="inputSent" class="btn btn-branded nav-item m-1">Испрати</a>
+                        </div>
+                    </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td scope="col"></td>
+                                <td scope="col">Информации</td>
+                                <td scope="col">Техничка Поддршка</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">Телефон</td>
+                                <td>+389 2 2779 444</td>
+                                <td>+389 2 2779 444</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Е-Пошта</td>
+                                <td>info@mkhost.com.mk</td>
+                                <td>support@mkhost.com.mk</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xl-7 col-md-12">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4987.655595460997!2d21.46733301544357!3d41.98572786512893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smkhost!5e0!3m2!1sen!2smk!4v1555583103828!5m2!1sen!2smk" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/javascripts/main.js"></script>
+</body>
+</html>

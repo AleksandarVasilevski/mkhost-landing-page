@@ -1,0 +1,130 @@
+/* Global */
+font-family: 'Roboto', sans-serif;
+
+h1, p{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+}
+
+.section-padding{
+    padding: 80px 0;
+}
+
+.btn-branded{
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #1B75BC !important;
+    border-radius: 5px;
+    border: #fff solid 2px;
+}
+
+.btn-branded:hover{
+    background-color: #333;
+    color: #fff;
+    border: #333 solid 2px;
+}
+
+/* Nav */
+.nav-item:hover{
+    color: #1B75BC !important;
+}
+
+/* Heading */
+#heading{
+    height: 100%;
+    background-image: url("/images/apple-clean-containers-205317.jpg");
+    background-position: 50% 65%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#show-services{
+    position: absolute;
+    bottom: 25px;
+    left: 47.3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Services */
+.card{
+    margin: 0 12%;
+    background-color: #f8f9fa;
+    /* border: gray solid 1px; */
+    border-radius: 10px;
+    box-shadow: 2px 4px #D3D3D3;
+    transition: transform .2s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card li:nth-child(2) {
+    margin-top: 40px;
+  }
+
+.card li:nth-child(4) {
+    margin: 40px 0;
+  }
+
+.fa-home, .fa-briefcase, .fa-rocket{
+    color: #1B75BC
+}
+
+/* Contact */
+#contact{
+    background-color: #1B75BC;
+}
+
+#contact h1{
+    color: #fff;
+}
+
+/* Footer */
+#footer{
+    padding: 40px 0;
+    background-color: #333333;
+}
+
+.table{
+    float: left;
+}
+
+#map{
+    width: 80%;
+    height: 200px;
+    float: right;
+}
+
+#footer th, #footer td{
+    color: white;
+}
+
+/* Large lg */
+@media(max-width: 1200px){
+    .card{
+        margin: 30px 3px;
+    }
+
+    #map{
+        width: 100%;
+    }
+}
+
+/* Medium md */
+@media(max-width: 768px){
+    .card{
+        margin: 30px 100px;
+    }
+
+    .table, #map{
+        float: none;
+    }
+}
