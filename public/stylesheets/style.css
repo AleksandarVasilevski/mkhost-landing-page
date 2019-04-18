@@ -47,9 +47,18 @@ ul{
 #show-services{
     position: absolute;
     bottom: 25px;
-    left: 47.3%;
+    left: 47.5%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#show-services img{
+    height: 40px;
+    transition: transform .2s;
+}
+
+#show-services img:hover{
+    transform: scale(1.1);
 }
 
 /* Services */
@@ -64,6 +73,7 @@ ul{
 
 .card:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .card li:nth-child(2) {
